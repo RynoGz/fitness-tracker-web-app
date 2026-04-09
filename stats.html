@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Stats</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+</head>
+<body id = stat>
+    <header>
+        <h1>Smart Fitness Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="log-workout.html">Log Workout</a></li>
+                <li><a href="goals.html">Fitness Goals</a></li>
+                <li><a href="favourites.html">Favourited Workouts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="stats">
+            <h2>Workout Statistics</h2>
+            <p id="totalWorkouts">Total Workouts: 0</p>
+            <p id="totalCalories">Total Calories Burned: 0</p>
+            <p id="avgDuration">Average Workout Duration: 0 min</p>
+            <h3>Calories Burned per Workout</h3>
+            <canvas id="caloriesChart" width="400" height="200"></canvas>
+            <h3>Workout Duration per Workout</h3>
+            <canvas id="durationChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>Â© 2025 Smart Fitness Tracker</p>
+    </footer>
+
+    <script src="workoutscript.js"></script>
+</body>
+</html>

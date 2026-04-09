@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Goals</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="workoutscript.js"></script>
+</head>
+<body id = goalcolor>
+    <header>
+        <h1>Fitness Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="log-workout.html">Log Workout</a></li>
+                <li><a href="stats.html">Statistics</a></li>
+                <li><a href="favourites.html">Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="fitnessGoals">
+            <h2>Set Your Fitness Goals</h2>
+            <form>
+                <label for="goal-type">Goal Type:</label>
+                <select id="goal-type" name="goal-type" required>
+                    <option value="time">Workout Duration (minutes)</option>
+                    <option value="calories">Calories Burned</option>
+                    <option value="sessions">Sessions per Week</option>
+                </select>
+
+                <label for="goal-value">Goal Value:</label>
+                <input type="number" id="goal-value" name="goal-value" required>
+
+                <label for="goal-deadline">Deadline:</label>
+                <input type="date" id="goal-deadline" name="goal-deadline" required>
+
+                <button type="submit">Save Goal</button>
+            </form>
+           
+                <h2>Logged Goals</h2>
+                <table id="goalsTable">
+                    <thead>
+                        <tr>
+                            <th>Goal Type</th>
+                            <th>Target</th>
+                            <th>Deadline</th>
+                            <th>Goal Status:</th><!--Header for badges/trophies (Silver, Gold, Platinum)-->
+                            <th>Progress</th>
+                            
+                             
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fitness Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>

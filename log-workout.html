@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log Workout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id = log>
+    <header>
+      <h1>Smart Fitness Tracker</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stats.html">Workout Stats</a></li>
+          <li><a href="goals.html">Fitness Goals</a></li>
+          <li><a href="favourites.html">Favourited Workouts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="log-workout">
+        <h2>Log Your Workout</h2>
+        <form id="workoutForm">
+          <label for="workoutType">Workout Type:</label>
+          <select id="workoutType">
+            <option value="running">Running</option>
+            <option value="cycling">Cycling</option>
+            <option value="strength">Strength Training</option>
+          </select>
+
+          <label for="duration">Duration (minutes):</label>
+          <input type="number" id="duration" min="1" required />
+
+          <label for="calories">Calories Burned:</label>
+          <input type="number" id="calories" min="1" required />
+
+          <label for="date">Workout Date:</label>
+          <input type="date" id="date" required />
+          <!-- <label for="distance">Distance(km)</label>
+                <input type="number" id="distance" step="0.1">-->
+
+          <button type="submit">Log Workout</button>
+        </form>
+
+        <h2>Workout Log</h2>
+        
+        <table id="workoutTable">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Duration</th>
+              <th>Calories</th>
+              <th>Date</th>
+              <th>Favorite</th>
+              <th>Actions</th>
+              
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>Â© 2025 Smart Fitness Tracker</p>
+    </footer>
+
+    <script src="workoutscript.js"></script>
+  </body>
+</html>
